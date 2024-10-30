@@ -5,7 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/rounded_background"> <!-- 배경 변경 -->
+
     <!-- TextView: 알람 시간을 표시 -->
     <TextView
         android:id="@+id/textViewAlarmTime"
@@ -19,8 +21,8 @@
     <!-- Switch: 알람 켜기/끄기 토글 -->
     <Switch
         android:id="@+id/switchAlarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />

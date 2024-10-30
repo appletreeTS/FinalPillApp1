@@ -16,6 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -53,7 +54,7 @@ public class AlertSettingsActivity extends AppCompatActivity {
 
         // RecyclerView 및 FLootingActionButton 초기화
         RecyclerView recyclerViewAlarms = findViewById(R.id.recyclerViewAlarms);
-        FloatingActionButton fabAddAlarm = findViewById(R.id.fabAddAlarm);
+        ImageButton fabAddAlarm = findViewById(R.id.imageButtonAddAlarm);
 
         // 알람 목록 및 어댑터 초기화
         alarms = new ArrayList<>();
