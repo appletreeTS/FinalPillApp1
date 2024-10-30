@@ -26,6 +26,8 @@ public class PillAdapter extends ArrayAdapter<PillInfo> {
         this.onItemClickListener = listener;
     }
 
+
+
     public PillAdapter(Context context, List<PillInfo> pillList) {
         super(context, 0, pillList);
     }
@@ -42,9 +44,12 @@ public class PillAdapter extends ArrayAdapter<PillInfo> {
         TextView efcyQesitm = convertView.findViewById(R.id.efcyQesitm);
         ImageView itemImage = convertView.findViewById(R.id.itemImage);
 
+
+
         itemName.setText(pill.getItemName());
         efcyQesitm.setText(pill.getEfcyQesitm());
         Picasso.get().load(pill.getImageUrl()).into(itemImage);
+
 
         convertView.setOnClickListener(v -> {
             if (onItemClickListener != null) {

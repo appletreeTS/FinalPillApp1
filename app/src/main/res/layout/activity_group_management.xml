@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/groupNameInput"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:hint="그룹 이름 입력" />
+
+    <!-- 그룹 생성 버튼을 이미지 버튼으로 변경 -->
+    <ImageButton
+        android:id="@+id/createGroupButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/addgroupbtn"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="createGroupButton"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
